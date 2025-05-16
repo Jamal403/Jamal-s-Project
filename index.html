@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Jamal Chamakope - Web Developer" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio" />
+  <meta name="author" content="Jamal Chamakope" />
+  <title>Jamal Doe | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body onload="greetUser()">
+  <header>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html" class="A">Home</a></li>
+      <li><a href="about.html" class="A">About Me</a></li>
+      <li><a href="project.html" class="A">Projects</a></li>
+      <li><a href="contact.html" class="A">Contact</a></li>
+      <li><a href="survey.html" class="A">Survey</a></li>
+    </ul>
+    <button id="theme-toggle">Toggle Theme</button>
+  </nav>
+</header>
+
+
+  <main>
+    <section class="B">
+            <h1>Welcome to my Portfolio!</h1>
+      <p id="greeting"></p>
+
+      <!-- Normal Image -->
+      <img src="images/Jamal.jpg" alt="Jamal's Profile Photo" class="profile-pic" />
+
+
+
+      <!-- Image Map -->
+      <h2>Explore My Work:</h2>
+      <img src="images/map.png" usemap="#workmap" alt="Work Showcase" width="500" />
+
+      <map name="workmap">
+        <area shape="rect" coords="0,0,200,200" href="projects.html" alt="Projects Section" />
+        <area shape="rect" coords="200,0,400,200" href="about.html" alt="About Me Section" />
+      </map>
+
+      <!-- Absolute Link -->
+      
+      <!-- Email Link -->
+      <p><span class="bold-text">Visit my</span> <a href="https://github.com/Jamal403/Jamal-s-Project.git" target="_blank">GitHub profile</a>.</p>
+
+<p><span class="bold-text">Contact me at</span> <a href="mailto:jamalabdul039@gmail.com">jamalabdul039@gmail.com</a></p>
+
+
+      
+
+      <!-- Iframe - Already Present -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/o50N3-OaGdM?si=6_-841Sph4ritel1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 Jamal Chamakope</p>
+  </footer>
+</body>
+</html>

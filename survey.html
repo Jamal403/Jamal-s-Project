@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Survey - Jamal Chamakope" />
+  <meta name="keywords" content="Survey Form, Feedback" />
+  <meta name="author" content="Jamal Chamakope" />
+  <title>Survey | Jamal Chamakope</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <header>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html" class="A">Home</a></li>
+      <li><a href="about.html" class="A">About Me</a></li>
+      <li><a href="project.html" class="A">Projects</a></li>
+      <li><a href="contact.html" class="A">Contact</a></li>
+      <li><a href="survey.html" class="A">Survey</a></li>
+    </ul>
+    <button id="theme-toggle">Toggle Theme</button>
+  </nav>
+</header>
+
+
+  <main>
+    <section>
+      <h1>User Survey</h1>
+      <form action="#" method="post" class="form1">
+        <label for="experience">How was your experience with my website?</label><br />
+        <select id="experience" name="experience">
+          <option value="great">Great</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select><br />
+
+        <label>Would you recommend my portfolio?</label><br />
+        <div class="formbolly">
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="recommend" value="yes" /></div>
+        <div class="formbolly">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="recommend" value="no" /></div><br />
+        
+
+        <label for="feedback">Any suggestions?</label><br />
+        <textarea id="feedback" name="feedback" rows="4"></textarea><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jamal Chamakope</p>
+  </footer>
+</body>
+</html>
