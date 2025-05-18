@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en">
+<head>
+    <!-- Meta information for browser rendering and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About JAMAL CHAMA, professional web developer">
+    <meta name="keywords" content="web developer, about, skills, resume">
+    <meta name="author" content="JAMAL CHAMA">
+
+    <!-- Page title -->
+    <title>About Me | JAMAL CHAMA</title>
+
+    <!-- Main stylesheet for screen -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Print stylesheet for printing the resume -->
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+    <!-- Header with logo and navigation menu -->
+    <header>
+        <div class="header-container">
+            <!-- Profile logo image -->
+            <div id="logo">
+                <img src="images/antar.jpg" alt="JAMAL CHAMA Logo">
+            </div>
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <!-- Theme toggle button (Light/Dark mode) -->
+                    <li><button id="theme-toggle">☀️/🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content container for About page -->
+    <main class="about-container">
+        <!-- Section: Biography -->
+        <section class="bio-section">
+            <h1>About Me</h1>
+
+            <!-- Profile image with clickable social map areas -->
+            <figure>
+                <img src="images/antar.jpg" alt="JAMAL CHAMA profile picture" usemap="#socialmap">
+                <figcaption>JAMAL CHAMA, Web Developer</figcaption>
+            </figure>
+
+            <!-- Image map for linking parts of the image to social media -->
+            <map name="socialmap">
+                <area shape="rect" coords="0,0,100,100" href="https://linkedin.com" alt="LinkedIn" target="_blank">
+                <area shape="rect" coords="100,0,200,100" href="https://github.com" alt="GitHub" target="_blank">
+                <area shape="rect" coords="200,0,300,100" href="https://twitter.com" alt="Twitter" target="_blank">
+            </map>
+
+            <!-- Personal background story -->
+            <article>
+                <h2>My Story</h2>
+                <p>
+                    My name is Jamal CHAMAKOPE, and I was born in Dar es Salaam. I am 22 years old and currently a second-year student at the University of Dodoma, pursuing a degree in Software Engineering. Technology has always fascinated me, and I am deeply passionate about learning various aspects of it, including web development, data science, machine learning, and artificial intelligence. Occasionally, I also explore cybersecurity, as I enjoy broadening my technical knowledge.
+                    Beyond academics, I have a great love for gaming. Playing video games such as PlayStation and eFootball is one of my favorite ways to unwind and immerse myself in interactive entertainment. Games allow me to challenge myself, strategize, and enjoy digital experiences that blend creativity with technology.
+                    I live with my mother, who is an essential part of my life. I am the second and youngest child in a family of two, and I truly value the bond we share. Family plays a crucial role in shaping my principles, and I appreciate the support I receive from my loved ones.
+                    In terms of personal interests, I have a strong preference for food. I enjoy meals such as rice, meat, and bananas, along with other delicious dishes. Good food brings me comfort and energy, fueling me for both my studies and leisure activities.
+                    At the moment, I am not in a relationship because my priority is my education and personal growth. I am dedicated to mastering my field and achieving my goals, ensuring that I build a strong foundation for my future.
+                </p>
+
+                  
+            </article>
+        </section>
+
+        <!-- Section: Skills and Resume -->
+        <section class="skills-section" id="skills">
+            <h2>My Skills</h2>
+
+            <!-- Skill categories in two articles: Technical and Professional -->
+            <div class="skills-container">
+                <!-- Technical skills -->
+                <article>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Frontend Development
+                            <ul>
+                                <li>HTML5, JavaScript & CSS3</li>
+                                <li>React.js</li>
+                            </ul>
+                        </li>
+                        <li>Backend Development
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>MYSQL</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Professional/soft skills -->
+                <article>
+                    <h3>Professional Skills</h3>
+                    <ol>
+                        <li>Project Management</li>
+                        <li>Agile Development</li>
+                        <li>UI/UX Design Principles</li>
+                    </ol>
+                </article>
+            </div>
+
+            <!-- Resume section with print button -->
+            <section class="resume" id="resume">
+                <h3>My Resume</h3>
+                <!-- Button to trigger browser print dialog -->
+                <button onclick="window.print()" class="print-btn">Print Resume</button>
+
+                <!-- Resume content: contact info, education, experience -->
+                <div class="resume-content">
+                    <h4>JAMAL CHAMA</h4>
+                    <p>Email: <a href="mailto:jamalabdul039@gmail.com">jamalabdul039@gmail.com</a> | Phone: <a href="tel:+255688757519">+255 688 757 519</a></p>
+
+                    <h5>Education</h5>
+                    <ul>
+                        <li>B.S. Software Engineering - University of DODOMA (2023-2027)</li>
+                    </ul>
+
+                    <h5>Work Experience</h5>
+                    <ul>
+                        <li>Frontend Developer at My own Portfolio</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 JAMAL CHAMA. All rights reserved.</p>
+
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for interactivity -->
+    <script src="js/script.js"></script>
+</body>
+</html>

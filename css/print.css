@@ -1,0 +1,43 @@
+/* Styles for printing the page */
+@media print {
+    body {
+        font-size: 12pt;      /* Set readable text size */
+        line-height: 1.5;     /* Add space between lines */
+        color: #000;          /* Use black text */
+        background: #fff;     /* Use white background */
+    }
+
+    nav, footer, .no-print {
+        display: none !important;  /* Hide navigation, footer, and elements marked 'no-print' */
+    }
+
+    .resume-content {
+        border: none !important;   /* Remove borders */
+        padding: 0 !important;     /* Remove padding */
+        margin: 0 !important;      /* Remove margins */
+    }
+
+    a {
+        color: #000 !important;         /* Make links black */
+        text-decoration: none !important; /* Remove underline from links */
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";  /* Show the URL after the link */
+        font-size: 0.8em;              /* Make URL text smaller */
+        font-weight: normal;           /* Keep normal weight */
+    }
+
+    .page-break {
+        page-break-after: always;   /* Add page break after this element */
+    }
+
+    img {
+        max-width: 100% !important; /* Make images fit page */
+        height: auto !important;    /* Keep image ratio */
+    }
+
+    @page {
+        margin: 1cm;  /* Set page margins */
+    }
+}
